@@ -48,10 +48,7 @@ to figure out how to get the tests to pass. Resetting the array returns us to a
 blank slate between tests.
 
 This is also a good illustration of why it's generally good practice to avoid
-mutating a program's state whenever possible. If we use only _nondestructive_
-methods, we have complete control over what's going into and coming out of the
-function. This makes our programs more robust, easier to maintain, and less
-prone to bugs.
+mutating a program's state whenever possible. If console.log(0)
 
 Remember the workflow:
 
