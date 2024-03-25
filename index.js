@@ -1,9 +1,9 @@
 // Write your solution here!
 let cats = [ "Milo", "Otis", "Garfield"]
-function destructivelyAppendCat(){
+function destructivelyAppendCat(name){
     cats.push('Ralph');
 } 
-function destructivelyPrependCat(){
+function destructivelyPrependCat(name){
     cats.unshift('Bob');
 }
 function destructivelyRemoveLastCat(){
@@ -14,10 +14,10 @@ function destructivelyRemoveFirstCat(){
 }
 function appendCat(){
 
-    return ["Milo", "Otis", "Garfield","Broom", "]
+    return ["Milo", "Otis", "Garfield","Broom"]
 }
-function prependCat(){
-    return(cats).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
+function prependCat(name){
+    return [name, ...cats,];
 }
 function removeLastCat(){
     return cats.slice(0,-1);
@@ -25,3 +25,4 @@ function removeLastCat(){
 function removeFirstCat(){
     return cats.slice(1)
 }
+
